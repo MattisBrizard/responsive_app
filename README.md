@@ -1,16 +1,23 @@
 # responsive_app
 
-A new Flutter project.
+A demo of a responsive flutter app for Flutter Meetup in Bordeaux (17/10/2019).
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To use flutter web, make sure to have it enabled :
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter channel master
+flutter upgrade
+flutter config --enable-web
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+To run the project in browser :
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+git clone https://github.com/MattisBrizard/responsive_app.git
+cd responsive_app
+flutter run -d chrome
+```
+
+This app use the [Lorem Picsum public API](https://picsum.photos/).
