@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_app/common/base_widget.dart';
+import 'package:responsive_app/common/colors.dart';
 import 'package:responsive_app/models/device_screen_type.dart';
 import 'package:responsive_app/models/random_image.dart';
 import 'package:responsive_app/modules/images/images_bloc.dart';
@@ -35,7 +36,7 @@ class _ImagesPageState extends State<ImagesPage> {
         return Scaffold(
           appBar: AppBar(
             title: const Text('Random image'),
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.mainColor,
           ),
           drawer: !isDesktop
               ? Drawer(
@@ -66,7 +67,7 @@ class _ImagesPageState extends State<ImagesPage> {
             onPressed: () => BlocProvider.of<ImagesBloc>(context).add(
               FetchImages(),
             ),
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.mainColor,
           ),
         );
       },
