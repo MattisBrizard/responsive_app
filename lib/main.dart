@@ -8,7 +8,11 @@ import 'package:responsive_app/modules/images/images_page.dart';
 import 'package:responsive_app/repository/image_repository.dart';
 
 void main() {
-  BlocSupervisor.delegate = SimpleBlocDelegate();
+  bool isDebugMode = false;
+  assert(isDebugMode = true);
+  if (isDebugMode) {
+    BlocSupervisor.delegate = SimpleBlocDelegate();
+  }
   runApp(MyApp());
 }
 

@@ -87,7 +87,7 @@ class _SelectedImage extends StatelessWidget {
     return Center(
       child: selectedImage != ''
           ? Image.network(selectedImage)
-          : const Text('Select an Image'),
+          : const Text('No image selected'),
     );
   }
 }
