@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      builder: (BuildContext context) => ImagesBloc(
+      create: (BuildContext context) => ImagesBloc(
         imageRepository: ImageRepository(
           client: ImageApiClient(),
         ),
